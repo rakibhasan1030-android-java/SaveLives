@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin_or_signup_screens.sign_up_fragments.SignUpContactInfoFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/blood_logo_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/blood_donation_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/contact"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blood_logo_iv" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/information"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+
+        <!-- username-->
+        <TextView
+            android:id="@+id/contact_info_phone_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/phone_no"
+            app:layout_constraintBottom_toTopOf="@+id/phone_no_cv"
+            app:layout_constraintEnd_toEndOf="@+id/phone_no_cv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phone_no_cv" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/phone_no_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:cardBackgroundColor="@color/very_light_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact_info_fragment_phone_no_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:ems="12"
+                android:hint="@string/phone_no_hint_gp"
+                android:inputType="phone" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- email-->
+        <TextView
+            android:id="@+id/alt_phone_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/alt_phone_no"
+            app:layout_constraintBottom_toTopOf="@+id/alt_phone_no_cv"
+            app:layout_constraintEnd_toEndOf="@+id/alt_phone_no_cv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/alt_phone_no_cv" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/alt_phone_no_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/very_light_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="@+id/phone_no_cv"
+            app:layout_constraintStart_toStartOf="@+id/phone_no_cv"
+            app:layout_constraintTop_toBottomOf="@+id/phone_no_cv">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact_info_fragment_alt_phone_no_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:ems="12"
+                android:hint="@string/phone_no_hint_robi"
+                android:inputType="phone" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- password-->
+        <TextView
+            android:id="@+id/social_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/social"
+            app:layout_constraintBottom_toTopOf="@+id/social_cv"
+            app:layout_constraintEnd_toEndOf="@+id/social_cv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/social_cv" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/social_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/very_light_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="@+id/alt_phone_no_cv"
+            app:layout_constraintStart_toStartOf="@+id/alt_phone_no_cv"
+            app:layout_constraintTop_toBottomOf="@+id/alt_phone_no_cv">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact_info_fragment_social_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:ems="12"
+                android:hint="@string/social_hint"
+                android:inputType="text"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/contact_bottom_description"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/social_cv"
+            app:layout_constraintStart_toStartOf="@+id/social_cv"
+            app:layout_constraintTop_toBottomOf="@+id/social_cv" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/contract_info_fragment_next_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ss_rounded_corner_rectangle_button_bg_red"
+            android:elevation="25dp"
+            android:padding="9dp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

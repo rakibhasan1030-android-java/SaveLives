@@ -1,0 +1,24 @@
+<!-- bottom_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon_selector"
+        android:title="@string/home"
+        app:cnb_iconColor="@color/red_light"/>
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map_icon_selector"
+        android:title="@string/map"
+        app:cnb_iconColor="@color/red_light"/>
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notification_icon_selector"
+        android:title="@string/notification"
+        app:cnb_iconColor="@color/red_light" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_icon_selector"
+        android:title="@string/profile"
+        app:cnb_iconColor="@color/red_light" />
+</menu>
