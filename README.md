@@ -28,7 +28,9 @@ ____________ LOG IN SCREEN ____________
 <br/>
 <br/>
 <br/>
-________ SIGN UP SCREENS ________
+____________ SIGN UP SCREENS ____________
+<br/>
+<br/>
 
 <img src="images/sign_up_screen_one.png" width=280>
 
