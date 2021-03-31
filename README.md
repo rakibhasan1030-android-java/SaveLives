@@ -51,7 +51,7 @@ ___________ SIGN UP SCREENS ___________
 <br/>
 <br/>
 <br/>
-____________ HOME SCREEN ____________
+_____________ HOME SCREEN _____________
 <br/>
 <br/>
 <img src="images/home_screen.png" width=280>
