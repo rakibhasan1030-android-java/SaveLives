@@ -28,7 +28,7 @@ ____________ LOG IN SCREEN ____________
 <br/>
 <br/>
 <br/>
-____________ SIGN UP SCREENS ____________
+___________ SIGN UP SCREENS ___________
 <br/>
 <br/>
 
