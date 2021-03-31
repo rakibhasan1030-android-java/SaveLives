@@ -20,8 +20,9 @@ ___________ SPLASH SCREENS ___________
 <br/>
 <br/>
 <br/>
-________ LOG IN SCREEN ________
-
+___________ LOG IN SCREEN ___________
+<br/>
+<br/>
 <img src="images/login_screen.png" width=280>
 <br/>
 <br/>
