@@ -10,6 +10,7 @@ Save Lives is a blood doantion app.
 <br/>
 ___________ SPLASH SCREENS ___________
 <br/>
+<br/>
 <img src="images/splash_screen_one.png" width=280>
 
 <img src="images/splash_screen_two.png" width=280>
