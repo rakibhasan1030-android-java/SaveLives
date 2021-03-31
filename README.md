@@ -7,8 +7,6 @@ Save Lives is a blood doantion app.
 # SCREENSHOTS
 <br/>
 <br/>
-<br/>
-<br/>
 ___________ SPLASH SCREENS ___________
 <br/>
 <br/>
