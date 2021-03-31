@@ -19,7 +19,6 @@ import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class HomeActivity extends AppCompatActivity {
 
-    SignUpInfoPOJO signUpInfoPOJO;
     ChipNavigationBar navigationBar;
 
     @Override

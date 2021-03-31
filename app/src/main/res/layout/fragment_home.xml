@@ -45,59 +45,131 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/home_fragment_viewpager"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_fragment_blood_donation_campaign_rv"
             android:layout_width="0dp"
-            android:layout_height="135dp"
+            android:layout_height="140dp"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="@+id/home_fragment_switch"
             app:layout_constraintStart_toStartOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/home_fragment_switch">
 
-        </androidx.viewpager.widget.ViewPager>
-
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/home_fragment_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_fragment_viewpager"
-            app:tabBackground="@drawable/ss_tab_indicator_selector"
-            app:tabIndicatorHeight="0dp">
-
-        </com.google.android.material.tabs.TabLayout>
+        </androidx.recyclerview.widget.RecyclerView>
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:text="@string/menu"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/home_fragment_viewpager"
-            app:layout_constraintTop_toBottomOf="@+id/home_fragment_layout" />
+            app:layout_constraintStart_toStartOf="@+id/home_fragment_blood_donation_campaign_rv"
+            app:layout_constraintTop_toBottomOf="@+id/home_fragment_blood_donation_campaign_rv" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/home_fragment_menu_recycler_view"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/home_fragment_viewpager"
+            app:layout_constraintEnd_toEndOf="@+id/home_fragment_blood_donation_campaign_rv"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14">
 
+            <ImageView
+                android:id="@+id/book_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/book_image"
+                app:layout_constraintEnd_toStartOf="@+id/donation_iv"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Book"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/book_iv"
+                app:layout_constraintStart_toStartOf="@+id/book_iv"
+                app:layout_constraintTop_toBottomOf="@+id/book_iv" />
+
+            <ImageView
+                android:id="@+id/donation_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/donation_image"
+                app:layout_constraintEnd_toStartOf="@+id/donor_iv"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/book_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Donation"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/donation_iv"
+                app:layout_constraintStart_toStartOf="@+id/donation_iv"
+                app:layout_constraintTop_toBottomOf="@+id/donation_iv" />
+
+
+            <ImageView
+                android:id="@+id/donor_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/donor_image"
+                app:layout_constraintEnd_toStartOf="@+id/my_list_iv"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/donation_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Donor"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/donor_iv"
+                app:layout_constraintStart_toStartOf="@+id/donor_iv"
+                app:layout_constraintTop_toBottomOf="@+id/donor_iv" />
+
+            <ImageView
+                android:id="@+id/my_list_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/my_list_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/donor_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="My List"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/my_list_iv"
+                app:layout_constraintStart_toStartOf="@+id/my_list_iv"
+                app:layout_constraintTop_toBottomOf="@+id/my_list_iv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:text="@string/requests"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -105,7 +177,7 @@
             app:layout_constraintStart_toStartOf="@+id/home_fragment_menu_recycler_view"
             app:layout_constraintTop_toBottomOf="@+id/home_fragment_menu_recycler_view" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/home_fragment_request_recycler_view"
             android:layout_width="0dp"
             android:layout_height="80dp"
@@ -114,9 +186,73 @@
             app:layout_constraintStart_toStartOf="@+id/textView15"
             app:layout_constraintTop_toBottomOf="@+id/textView15">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <ImageView
+                android:id="@+id/urgent_request_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/urgent_image"
+                app:layout_constraintEnd_toStartOf="@+id/my_request_iv"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Urgent Request"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/urgent_request_iv"
+                app:layout_constraintStart_toStartOf="@+id/urgent_request_iv"
+                app:layout_constraintTop_toBottomOf="@+id/urgent_request_iv" />
+
+            <ImageView
+                android:id="@+id/my_request_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/my_request_image"
+                app:layout_constraintEnd_toStartOf="@+id/post_request_iv"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/urgent_request_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="My Request"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/my_request_iv"
+                app:layout_constraintStart_toStartOf="@+id/my_request_iv"
+                app:layout_constraintTop_toBottomOf="@+id/my_request_iv" />
+
+            <ImageView
+                android:id="@+id/post_request_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/post_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/my_request_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Post Request"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/post_request_iv"
+                app:layout_constraintStart_toStartOf="@+id/post_request_iv"
+                app:layout_constraintTop_toBottomOf="@+id/post_request_iv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
@@ -126,7 +262,9 @@
             app:layout_constraintStart_toStartOf="@+id/home_fragment_request_recycler_view"
             app:layout_constraintTop_toBottomOf="@+id/home_fragment_request_recycler_view">
 
-        </androidx.recyclerview.widget.RecyclerView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

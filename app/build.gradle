@@ -70,13 +70,9 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$chip_nav_bar_latest_version"
 
 
-
     //looper CardStackView
     def looper_card_stack_view_latest_version = "1.0.2"
     implementation "com.loopeer.library:cardstack:$looper_card_stack_view_latest_version"
-
-
-
 
 
 

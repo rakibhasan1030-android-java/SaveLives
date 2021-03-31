@@ -126,13 +126,13 @@
     <string name="a_positive">A+</string>
 
 
-
-
-
-
-
-
     <string name="toast_info">Please, fill all info!</string>
+
+
+
+    <string name="blood_donation_campaign">Blood Donation Campaign 2021 Held on Today</string>
+    <string name="by_admin">by Admin</string>
+    <string name="one_min_ago">1 min ago</string>
 
 
 </resources>

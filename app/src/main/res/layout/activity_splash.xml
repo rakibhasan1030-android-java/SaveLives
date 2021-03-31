@@ -48,13 +48,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        app:tabBackground="@drawable/ss_tab_indicator_selector"
-        app:tabIndicatorHeight="0dp"
         app:layout_constraintBottom_toTopOf="@+id/splash_activity_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65999997">
+        app:layout_constraintVertical_bias="0.68"
+        app:tabBackground="@drawable/ss_tab_indicator_selector"
+        app:tabIndicatorHeight="0dp">
 
     </com.google.android.material.tabs.TabLayout>
 

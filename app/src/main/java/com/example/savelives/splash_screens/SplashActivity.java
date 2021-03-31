@@ -31,7 +31,9 @@ public class SplashActivity extends AppCompatActivity {
 
     private SwipeDisabledViewPager viewPager;
     private SplashActivityViewPagerAdapter splashActivityViewPagerAdapter;
+
     List<SplashScreenItemPOJO> list;
+
 
     TabLayout tabIndicator;
     AppCompatButton nextButton;
@@ -79,8 +81,8 @@ public class SplashActivity extends AppCompatActivity {
 
                 if (buttonText.equals(getResources().getString(R.string.next))){
                     position = viewPager.getCurrentItem();
-                    Log.v("PPP", String.valueOf(list.size()));
-                    Log.v("PPP", String.valueOf(viewPager.getCurrentItem()));
+                   // Log.v("PPP", String.valueOf(list.size()));
+                   // Log.v("PPP", String.valueOf(viewPager.getCurrentItem()));
 
                     if (position < list.size() -1 ){
                         position++;
