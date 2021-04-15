@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.savelives">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,19 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SaveLives">
-        <activity android:name=".signin_or_signup_screens.SignUpActivity" >
-        </activity>
+        <activity android:name=".home_menu_requests_views.home_menu_container_activity.HomeMenuActivity"/>
+        <activity android:name=".signin_or_signup_screens.SignUpActivity" />
         <activity android:name=".signin_or_signup_screens.SignInActivity" />
         <activity android:name=".splash_screens.SplashActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".HomeActivity" ></activity>
+        <activity android:name=".HomeActivity" />
     </application>
 
 </manifest>

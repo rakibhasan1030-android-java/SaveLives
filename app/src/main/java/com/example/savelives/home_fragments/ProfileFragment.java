@@ -19,7 +19,8 @@ import java.util.List;
 
 public class ProfileFragment extends Fragment {
 
-    CardStackView stackView;
+    private CardStackView stackView;
+    private CardStackAdapter cardStackAdapter;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -32,10 +33,10 @@ public class ProfileFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_profile, container, false);
 
         stackView = view.findViewById(R.id.profile_fragment_csv);
-
-
-        return  view;
+        //stackView.setItemExpendListener(getContext());
+        cardStackAdapter = new CardStackAdapter(getContext());
+        stackView.setAdapter(cardStackAdapter);
+        return view;
     }
-
 
 }
