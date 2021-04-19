@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/phone_no_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/very_light_gray"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_schedule_or_emergencyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scheduled"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/urgent_and_my_request_list_item_text_btn"
+                android:layout_width="75dp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ss_rounded_corner_rectangle_button_bg_red"
+                android:text="@string/contact"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/urgent_and_my_request_list_item_share_or_delete_btn"
+                app:layout_constraintEnd_toStartOf="@+id/urgent_and_my_request_list_item_share_or_delete_btn"
+                app:layout_constraintTop_toTopOf="@+id/urgent_and_my_request_list_item_share_or_delete_btn" />
+
+            <ImageButton
+                android:id="@+id/urgent_and_my_request_list_item_share_or_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/share_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_at_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/at"
+                app:layout_constraintStart_toStartOf="@+id/urgent_and_my_request_list_item_schedule_or_emergencyTv"
+                app:layout_constraintTop_toBottomOf="@+id/urgent_and_my_request_list_item_schedule_or_emergencyTv" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_donation_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/donation_time"
+                app:layout_constraintStart_toEndOf="@+id/urgent_and_my_request_list_item_at_tv"
+                app:layout_constraintTop_toTopOf="@+id/urgent_and_my_request_list_item_at_tv" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_blood_group_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/o_plus"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/urgent_and_my_request_list_item_share_or_delete_btn"
+                app:layout_constraintTop_toBottomOf="@+id/urgent_and_my_request_list_item_share_or_delete_btn" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_hospital_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/jarin_hospital"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/urgent_and_my_request_list_item_at_tv"
+                app:layout_constraintTop_toBottomOf="@+id/urgent_and_my_request_list_item_donation_time_tv" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_hospital_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/three_km"
+                android:textColor="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/urgent_and_my_request_list_item_hospital_name_tv"
+                app:layout_constraintStart_toEndOf="@+id/urgent_and_my_request_list_item_hospital_name_tv"
+                app:layout_constraintTop_toTopOf="@+id/urgent_and_my_request_list_item_hospital_name_tv" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_notification_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/one_min_ago"
+                android:textColor="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/urgent_and_my_request_list_item_hospital_name_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/urgent_and_my_request_list_item_hospital_distance_tv"
+                app:layout_constraintTop_toTopOf="@+id/urgent_and_my_request_list_item_hospital_name_tv" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/light_gray_shadow"
+                app:layout_constraintEnd_toEndOf="@+id/urgent_and_my_request_list_item_notification_time_tv"
+                app:layout_constraintStart_toStartOf="@+id/urgent_and_my_request_list_item_hospital_name_tv"
+                app:layout_constraintTop_toBottomOf="@+id/urgent_and_my_request_list_item_hospital_name_tv" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/location_icon"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_hospital_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/hospital_address"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/urgent_and_my_request_list_item_user_name_or_relation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/johnadam"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/person_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/urgent_and_my_request_list_item_user_name_or_relation_tv"
+                app:layout_constraintEnd_toStartOf="@+id/urgent_and_my_request_list_item_user_name_or_relation_tv"
+                app:layout_constraintTop_toTopOf="@+id/urgent_and_my_request_list_item_user_name_or_relation_tv" />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

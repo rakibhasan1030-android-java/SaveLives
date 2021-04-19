@@ -50,14 +50,14 @@
     //blood group
     <string name="what_is_your">What is Your</string>
     <string name="blood_group">Blood Group?</string>
-    <string name="a_plus">A +</string>
-    <string name="a_minus">A -</string>
-    <string name="b_plus">B +</string>
-    <string name="b_minus">B -</string>
-    <string name="ab_plus">AB +</string>
-    <string name="ab_minus">AB -</string>
-    <string name="o_plus">O +</string>
-    <string name="o_minus">O -</string>
+    <string name="a_plus">A+</string>
+    <string name="a_minus">A-</string>
+    <string name="b_plus">B+</string>
+    <string name="b_minus">B-</string>
+    <string name="ab_plus">AB+</string>
+    <string name="ab_minus">AB-</string>
+    <string name="o_plus">O+</string>
+    <string name="o_minus">O-</string>
     <string name="blood_group_bottom_description">Your blood group need to be accurate. if you do not know about it, please contact nearest clinic.</string>
 
     //weight
@@ -114,6 +114,10 @@
     //Notification fragment
     <string name="notifications">Notifications</string>
     <string name="notification">Notification</string>
+    <string name="musa_clinic">Musa Clinic</string>
+    <string name="blood_request_notification_text_posted"><b>Musa Clinic</b> Posted a blood <br>request near you</br></string>
+    <string name="blood_request_notification_text_requested">requested you for<br> O+ blood</br></string>
+    <string name="blood_request_notification_text_earned">earned a new badge</string>
 
     //map fragment
     <string name="search">Search</string>
@@ -165,7 +169,40 @@
     <string name="brother">Brother</string>
     <string name="publish">Publish</string>
     <string name="urgent">Urgent</string>
-    <string name="schedule"><u>Schedule</u></string>
+    <string name="schedule_underline"><u>Schedule</u></string>
+    <string name="scheduled">Scheduled</string>
+
+    //Urgent and my request menu
+    <string name="my_request">My Request</string>
+    <string name="sort_by">Sort By</string>
+    <string name="emergency">Emergency</string>
+    <string name="managed">Managed</string>
+    <string name="expired">Expired</string>
+    <string name="edit">Edit</string>
+    <string name="at">at</string>
+    <string name="donation_time">Sun 11.30 PM</string>
+    <string name="notification_time">1 min ago</string>
+    <string name="jarin_hospital">Jarin Hospital</string>
+    <string name="three_km">3km</string>
+    <string name="hospital_address">21/3, Los Angeles, CA</string>
+    <string name="johnadam">johnadam</string>
+    <string name="urgent_requests">Urgent Requests</string>
+
+
+    //Donation menu
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="date_and_time">Monday, 2 Jan, 11:08 PM</string>
+    <string name="you_have_saved">You have save 5 lives, donated 50 unit</string>
+    <string name="kings_land_hospital">Kingsland Hospital</string>
+    <string name="times">Times</string>
+    <string name="history">History</string>
+    <string name="reviews">Reviews</string>
+    <string name="reply">Reply</string>
+    <string name="like">Like</string>
+    <string name="ashiq">Ashiq Prottoy</string>
+    <string name="dec_twenty_seven">Dec 27</string>
+
 
 
 

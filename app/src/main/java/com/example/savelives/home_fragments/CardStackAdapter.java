@@ -36,11 +36,11 @@ public class CardStackAdapter extends StackAdapter<Integer> {
     protected CardStackView.ViewHolder onCreateView(ViewGroup parent, int viewType) {
         View view;
         switch (viewType) {
-            case R.layout.profile_fragment_info_contact_list_item:
-                view = getLayoutInflater().inflate(R.layout.profile_fragment_info_contact_list_item, parent, false);
+            case R.layout.profile_fragment_info_list_item:
+                view = getLayoutInflater().inflate(R.layout.profile_fragment_info_list_item, parent, false);
                 return new CardStackViewHolderInfoContact(view);
-            case R.layout.profile_fragment_donation_request_list_item:
-                view = getLayoutInflater().inflate(R.layout.profile_fragment_donation_request_list_item, parent, false);
+            case R.layout.profile_fragment_donation_list_item_main:
+                view = getLayoutInflater().inflate(R.layout.profile_fragment_donation_list_item_main, parent, false);
                 return new CardStackViewHolderDonationRequest(view);
             default:
                 view = getLayoutInflater().inflate(R.layout.profile_fragment_badges_list_item, parent, false);
@@ -54,9 +54,9 @@ public class CardStackAdapter extends StackAdapter<Integer> {
         if (position == 0) {//TODO TEST LARGER ITEM
             return R.layout.profile_fragment_badges_list_item;
         } else if (position == 1) {
-            return R.layout.profile_fragment_donation_request_list_item;
+            return R.layout.profile_fragment_donation_list_item_main;
         } else {
-            return R.layout.profile_fragment_info_contact_list_item;
+            return R.layout.profile_fragment_info_list_item;
         }
     }
     

@@ -136,23 +136,18 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="16dp"
+            android:padding="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
             app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
             app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
 
-            <com.loopeer.cardstack.CardStackView
-                android:id="@+id/profile_fragment_csv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.01999998">
-
-            </com.loopeer.cardstack.CardStackView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/profile_fragment_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

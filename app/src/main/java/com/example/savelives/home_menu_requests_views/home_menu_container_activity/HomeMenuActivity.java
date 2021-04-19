@@ -3,15 +3,11 @@ package com.example.savelives.home_menu_requests_views.home_menu_container_activ
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.savelives.R;
-import com.example.savelives.home_menu_requests_views.home_menu_fragments.BookFragment;
 import com.example.savelives.home_menu_requests_views.home_menu_fragments.DonationFragment;
 import com.example.savelives.home_menu_requests_views.home_menu_fragments.DonorFragment;
 import com.example.savelives.home_menu_requests_views.home_menu_fragments.MyListFragment;
@@ -36,12 +32,7 @@ public class HomeMenuActivity extends AppCompatActivity {
 
             FragmentManager fragmentManager = this.getSupportFragmentManager();
 
-            if (fragment_name.equals(Credentials.BOOK_FRAGMENT)) {
-                Fragment fragment = new BookFragment();
-                fragmentManager.beginTransaction()
-                        .replace(R.id.home_menu_container, fragment)
-                        .commit();
-            }else if (fragment_name.equals(Credentials.DONATION_FRAGMENT)){
+            if (fragment_name.equals(Credentials.DONATION_FRAGMENT)){
                 Fragment fragment = new DonationFragment();
                 fragmentManager.beginTransaction()
                         .replace(R.id.home_menu_container, fragment)

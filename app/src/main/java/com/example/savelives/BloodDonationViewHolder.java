@@ -9,10 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class BloodDonationViewHolder extends RecyclerView.ViewHolder {
 
+    TextView bloodCampaignTitleTV,bloodCampaignPostedBy, bloodCampaignTimeTV;
     ImageView bloodCampaignIV;
-    TextView bloodCampaignTitleTV;
-    TextView bloodCampaignPostedBy;
-    TextView bloodCampaignTimeTV;
 
     public BloodDonationViewHolder(@NonNull View itemView) {
         super(itemView);

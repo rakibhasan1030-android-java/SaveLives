@@ -79,11 +79,11 @@
             app:layout_constraintTop_toBottomOf="@+id/textView14">
 
             <ImageView
-                android:id="@+id/book_iv"
+                android:id="@+id/donation_iv"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/book_image"
-                app:layout_constraintEnd_toStartOf="@+id/donation_iv"
+                android:src="@drawable/donation_image"
+                app:layout_constraintEnd_toStartOf="@+id/donor_iv"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -92,30 +92,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Book"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/book_iv"
-                app:layout_constraintStart_toStartOf="@+id/book_iv"
-                app:layout_constraintTop_toBottomOf="@+id/book_iv" />
-
-            <ImageView
-                android:id="@+id/donation_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/donation_image"
-                app:layout_constraintEnd_toStartOf="@+id/donor_iv"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/book_iv"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="Donation"
-                android:textStyle="bold"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/donation_iv"
                 app:layout_constraintStart_toStartOf="@+id/donation_iv"
                 app:layout_constraintTop_toBottomOf="@+id/donation_iv" />
@@ -136,8 +115,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Donor"
-                android:textStyle="bold"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/donor_iv"
                 app:layout_constraintStart_toStartOf="@+id/donor_iv"
                 app:layout_constraintTop_toBottomOf="@+id/donor_iv" />
@@ -157,8 +136,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="My List"
-                android:textStyle="bold"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/my_list_iv"
                 app:layout_constraintStart_toStartOf="@+id/my_list_iv"
                 app:layout_constraintTop_toBottomOf="@+id/my_list_iv" />
